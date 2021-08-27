@@ -183,6 +183,6 @@ body {
 
 @media (max-width: 800px) {
     .middleText { font-size: 24px;
-                  margin-top: -480px }
-    .middleParagraph { font-size: 16px; 
+                  margin-top: -480px; }
+    .middleParagraph { font-size: 16px; }
 }
