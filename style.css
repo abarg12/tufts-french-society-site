@@ -1,49 +1,41 @@
-  /* Tooltip text */
-.tooltiptext {
-    visibility: hidden;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-   
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-    font-size: 12px;
-    text-decoration: none;
-
-    width: 240px;
-    top: 250px;
-    left: 50%;
-    margin-left: -120px;
-  }
-  
-/* Show the tooltip text when you mouse over the tooltip container */
-#tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-
 .middleSquare {
-    height: 700px;
+    height: 180px;
     width: 58%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 160px;
+}
+
+.graphicSquare {
+    height: 382px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 26px;
+}
+
+.circleImage {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    margin: auto;
+    border: 2px solid white;
 }
 
 .middleText {
-    font-size: 40px;
+    font-size: 32px;
     font-style: italic;
     font-family: Helvetica, Arial;
-    margin-top: -360px;
+    margin-top: -160px;
 }
 
 .middleParagraph {
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     font-family: Helvetica, Arial;
     margin-left: 60px;
     margin-right: 60px;
@@ -52,11 +44,11 @@
 
 .content {
     width: 100%;
-    height: 100% - 100px;
+    height: calc(100% - 200px);
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .header {
@@ -128,6 +120,44 @@
     text-decoration: underline;
 }
 
+.footer {
+    width: 95%;
+    height: 100px;
+    margin-left: 2.3%;
+    align-items: center;
+    border-top: 2px solid white;
+}
+
+.footLeft {
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+.footRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 10%;
+    height: 100px;
+    float: right;
+    margin-right: 36px;
+}
+
+.socialLogo {
+    height: 36px;
+    width: 36px;
+    margin: auto;
+}
+
+#tuftsLogo {
+    height: 100px;
+    width: 150px;
+    align-self: flex-start;
+    margin-left: 14px;
+}
+
 iframe {
     margin: 3%;
     border: 8px solid white;
@@ -176,13 +206,38 @@ body {
     .headerMenu     { display: none; }
     .headerMenuSmall { display: flex; }
     .middleSquare { width: 80%; }
-    .middleText { font-size: 32px;
-                  margin-top: -550px }
+    .middleText { font-size: 32px; }
     .middleParagraph { font-size: 20px; }
+    .circleImage {
+        width: 240px;
+        height: 240px;
+        border-radius: 120px;
+        margin: auto;
+        border: 2px solid white;
+    }
 }
 
 @media (max-width: 800px) {
-    .middleText { font-size: 24px;
-                  margin-top: -480px; }
-    .middleParagraph { font-size: 16px; }
+    .middleSquare { width: 80%; }
+    .middleText { 
+        font-size: 28px;  
+        padding-top: 0px;
+    }
+    .middleParagraph { font-size: 18px; }
+    .circleImage {
+        width: 160px;
+        height: 160px;
+        border-radius: 80px;
+        margin: auto;
+        border: 2px solid white;
+    }
+}
+
+@media (max-width: 650px) {
+    .middleSquare { width: 80%; }
+    .middleText { 
+        font-size: 22px;    
+        padding-top: 20px; 
+    }
+    .middleParagraph { font-size: 14px; }
 }
